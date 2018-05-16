@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void sendText(View view){
-        Intent intent = new Intent(this, DisplayTextActivity.class);
         EditText editText = (EditText) findViewById(R.id.editText3);
+        TextView textView1 = (TextView) findViewById(R.id.textView);
         String text = editText.getText().toString();
-        intent.putExtra(EXTRA_TEXT, text);
-        startActivity(intent);
+        textView1.setText(text);
+
     }
 }
