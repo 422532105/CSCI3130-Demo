@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_TEXT = "com.example.acme.csci3130_demo.TEXT";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
